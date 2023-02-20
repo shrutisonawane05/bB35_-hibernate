@@ -1,0 +1,18 @@
+package org.tnsindia.dao;
+
+ 
+	import org.tnsindia.entities.Student;
+
+	public interface Studentdao {
+
+		//abstract method for CRUD 
+		void addStudent(Student student);
+		void updateStudent(Student student);
+		void deleteStudent(Student student);
+		Student getStudentByID(int RollNo);
+
+		void beginTransaction();
+		void commitTransaction();
+
+	}
+
